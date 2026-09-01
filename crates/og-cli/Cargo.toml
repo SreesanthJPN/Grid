@@ -1,0 +1,24 @@
+[package]
+name = "og-cli"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "og-cli"
+path = "src/main.rs"
+
+[dependencies]
+og-transport = { path = "../og-transport" }
+og-protocol = { path = "../og-protocol" }
+og-crypto = { path = "../og-crypto" }
+tokio = { workspace = true }
+crossterm = { workspace = true }
+clap = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+ed25519-dalek = { workspace = true }
+serde = { workspace = true }
+postcard = { workspace = true }
+rustls = { workspace = true }
+quinn = { workspace = true }

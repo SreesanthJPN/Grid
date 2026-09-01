@@ -1,0 +1,28 @@
+[package]
+name = "og-relay"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "og-relay"
+path = "src/main.rs"
+
+[dependencies]
+og-transport = { path = "../og-transport" }
+og-protocol = { path = "../og-protocol" }
+og-crypto = { path = "../og-crypto" }
+tokio = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+anyhow = { workspace = true }
+clap = { workspace = true }
+ed25519-dalek = { workspace = true }
+rand_core = { workspace = true }
+quinn = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+postcard = { workspace = true }
+serde = { workspace = true }
+rustls = { workspace = true }

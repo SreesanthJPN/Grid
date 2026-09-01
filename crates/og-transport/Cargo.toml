@@ -1,0 +1,17 @@
+[package]
+name = "og-transport"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+og-protocol = { path = "../og-protocol" }
+quinn = { workspace = true }
+quinn-proto = "0.11.17"
+rustls = { workspace = true }
+tokio-rustls = { workspace = true }
+tokio-socks = { workspace = true }
+rcgen = { workspace = true }
+tokio = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }

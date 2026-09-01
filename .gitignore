@@ -1,0 +1,4 @@
+/target
+**/*.der
+**/*.offgrid*/
+og-relay-cert.der

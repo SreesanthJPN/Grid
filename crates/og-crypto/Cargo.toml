@@ -1,0 +1,29 @@
+[package]
+name = "og-crypto"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+snow = { workspace = true, features = ["risky-raw-split"] }
+ed25519-dalek = { workspace = true }
+x25519-dalek = { workspace = true }
+curve25519-dalek = { workspace = true }
+chacha20poly1305 = { workspace = true }
+hkdf = { workspace = true }
+hmac = "0.12"
+sha2 = { workspace = true }
+blake3 = { workspace = true }
+argon2 = { workspace = true }
+zeroize = { workspace = true }
+keyring = { workspace = true }
+ml-kem = { workspace = true, features = ["getrandom", "zeroize"] }
+rand_core = { workspace = true }
+subtle = { workspace = true }
+thiserror = { workspace = true }
+serde = { workspace = true }
+postcard = { workspace = true }
+bech32 = { workspace = true }
+
+[dev-dependencies]
+hex = "0.4"
